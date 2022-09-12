@@ -36,7 +36,7 @@ public class Exercise_39 {
 		
 		}while(amount<30000);
 		
-
+System.out.println("the salesamount is:  "+ salesamount);
 	}
 
 }

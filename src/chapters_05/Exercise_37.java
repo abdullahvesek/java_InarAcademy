@@ -16,9 +16,10 @@ public class Exercise_37 {
 		for (int i = decimal; i > 0; i /= 2) {
 			binary = (i % 2) + binary; 
 		}
+		
 
 		
-			"The binary value of" + decimal + " is: " + binary);
+		System.out.println("The binary value of" + decimal + " is: " + binary);
 	}
 
 }
