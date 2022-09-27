@@ -9,28 +9,28 @@ public class Exercise_17 {
 		System.out.println("enter an in between 1 and 15:  ");
 		int number=input.nextInt();
 		
-		
-		
-		for(int i =1; i<=number ; i++) {
-			
-			for(int k=number-i; k>=1; k++) {
-				System.out.print(" ");
-				
-			}
+
+		for(int row=1;row<=number;row++) {
 			
 			
-			for (int k=number; k>=2; k--) {
-				System.out.print(k+" ");
-				
+			for(int k=number-row;k>=1;k--) {
+				System.out.print("  ");
 			}
 		
-		for(int l =1; l<=number; l++) {
-			System.out.print(l+" ");
+		for(int a=row;a>=1;a--) {
+			System.out.print(a+" ");
+		}
+		
+		for(int s=2;s<=row;s++) {
+			System.out.print(s+" ");
 		}
 		
 		System.out.println();
+		
 		}
-
-	}
-
+			
+		}
+		
 }
+		
+		
