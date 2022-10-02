@@ -10,7 +10,7 @@ public class Exercise_39 {
 		double salesamount=0;
 		
 		do {
-			salesamount+=0.01;
+			salesamount+=0.1;
 			amount=5000;
 			
 			
@@ -27,16 +27,16 @@ public class Exercise_39 {
 		}
 		
 		if(salesamount>10000) {
-			comission=(salesamount-10000)*0.12+5000*0.10+5000*0.08;
+			comission=(salesamount-10000)*0.12+(5000*0.10)+(5000*0.08);
 			amount+=comission;
 		}
 		
 		
 		
 		
-		}while(amount<30000);
+		}while(amount<=30000);
 		
-System.out.println("the salesamount is:  "+ salesamount);
+System.out.printf("the salesamount is: %.2f ", salesamount);
 	}
 
 }
