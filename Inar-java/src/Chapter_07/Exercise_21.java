@@ -41,6 +41,16 @@ public class Exercise_21 {
 
 
 
+            for (int i = count.length-1;i>=0; i--) {
+
+                for (int j = 1; j < count[i]; j++) {
+                    System.out.print(" ");
+                }
+                System.out.print("0");
+                System.out.println();
+            }
+
+
 
 
 
