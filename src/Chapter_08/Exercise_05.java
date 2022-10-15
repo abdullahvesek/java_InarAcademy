@@ -26,6 +26,7 @@ public class Exercise_05 {
         System.out.println("the sum is\n ");
 
 
+
         double[][]s=addMatrix(m1,m2);
         for (int i = 0; i <s.length ; i++) {
             for (int j = 0; j <s[i].length ; j++) {

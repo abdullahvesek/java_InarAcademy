@@ -38,6 +38,7 @@ public class Exercise_04 {
     public static void sort(int[][] m) {
         for (int i = 0; i < m.length; i++) {
 
+
             int maxCol0 = m[i][0];
             int maxCol1 = m[i][1];
             int maxIndex = i;

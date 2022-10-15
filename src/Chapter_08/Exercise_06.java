@@ -13,6 +13,7 @@ public class Exercise_06 {
             }
         }
 
+
         System.out.println("enter the other 3 x 3 matirx");
         double[][]m2=new double[3][3];
 
