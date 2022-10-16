@@ -18,6 +18,7 @@ public class Exercise_01 {
         }
 
         for (int i = 0; i <matrix[0].length ; i++) {
+
             double total=0;
             for (int j = 0; j < matrix.length ; j++) {
                 total+=matrix[j][i];
