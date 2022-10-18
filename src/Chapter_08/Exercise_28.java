@@ -9,10 +9,12 @@ public class Exercise_28 {
         Exercise_16.fillArray(arr1);
         Exercise_16.print(arr1);
 
+        System.out.println();
+
         int[][]arr2=new int[3][3];
         Exercise_16.fillArray(arr2);
         Exercise_16.print(arr2);
-        System.out.println("the arr1 and arr2 is  "+(equals(arr1,arr2)?"strictly equal":" not strictly equal"));
+        System.out.println("\nthe arr1 and arr2 is  "+(equals(arr1,arr2)?"strictly equal":" not strictly equal"));
 
     }
 

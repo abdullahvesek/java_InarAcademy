@@ -12,10 +12,10 @@ public class Exercise_16 {
 
         fillArray(array);
 
-        System.out.println("before the sort the array is like that: ");
+        System.out.println("before the sort the array is like that:\n ");
         print(array);
         sort(array);
-        System.out.println("after the sort the array is like that: ");
+        System.out.println("\nafter the sort the array is like that:\n ");
         print(array);
     }
 
@@ -59,13 +59,14 @@ public static void fillArray(int[][]arr){
 
         public static void print(int[][]arr){
             for (int row = 0; row < arr.length ; row++) {
-                System.out.print("    ");
                 for (int col = 0; col <arr[row].length ; col++) {
                     System.out.print(arr[row][col]+" ");
 
                 }
+                System.out.print("    ");
+
             }
-            System.out.println();
+
         }
     }
 
