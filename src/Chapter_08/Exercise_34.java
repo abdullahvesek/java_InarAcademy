@@ -4,70 +4,47 @@ import java.util.Scanner;
 
 public class Exercise_34 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("enter coordinates of 6 points:");
         double[][] points = new double[6][2];
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 2; j++) {
-                points[i][j] = input.nextDouble();
+
+        getPoints(points);
+
+        double[] result = getTheRightmostLowestPoint(points);
+
+        System.out.println("the rigthmost lowest points is: "+"( "+result[0]+" , "+result[1]+" )");
+
+    }
+
+    public static void getPoints(double[][]points) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter points for rigthmost lowest points: ");
+        for (int row = 0; row <6 ; row++) {
+            for (int col = 0; col <2 ; col++) {
+                points[row][col]= input.nextDouble();
             }
-        }
-
-        double[] res = find(points);
-
-        System.out.println("the rigthmost lowest");
-        for (int i = 0; i <2 ; i++) {
-            System.out.print(res[i]+" ");
         }
     }
 
-    public static double[] find(double[][] points) {
-        double[] r = new double[2];
-        for (int i = 0; i < points.length; i++) {
-            double min0 = points[i][0];
-            double min1 = points[i][1];
-            int index = i;
+    public static double[] getTheRightmostLowestPoint(double[][] points) {
 
-            for (int j = i + 1; j < points.length; j++) {
-                if (points[j][1] < min1) {
-                    min0 = points[j][0];
-                    min1 = points[j][1];
-                    index = j;
+
+        double a = points[0][0];
+        double b = points[0][1];
+
+        for (int p = 1; p < points.length; p++) {
+            if (b > points[p][1]) {
+                a = points[p][0];
+                b = points[p][1];
+            } else if (b == points[p][1] && points[p][0] > a ){
+                    a = points[p][0];
+                    b = points[p][1];
                 }
             }
 
-            if (index != i) {
-                points[index][0] = points[i][0];
-                points[index][1] = points[i][1];
-                points[i][0] = min0;
-                points[i][1] = min1;
-            }
-
-        }
-        for (int i = 0; i < points.length; i++) {
-            double min0 = points[i][0];
-            double min1 = points[i][1];
-            int index = i;
-
-            for (int j = i + 1; j < points.length; j++) {
-                if (points[j][0] > min0 && points[j][1]==points[i][1]) {
-                    min0 = points[j][0];
-                    min1 = points[j][1];
-                    index = j;
-                }
-            }
-
-            if (index != i) {
-                points[index][0] = points[i][0];
-                points[index][1] = points[i][1];
-                points[i][0] = min0;
-                points[i][1] = min1;
-            }
-
-        }
-r[0]=points[0][0];
-        r[1]=points[0][1];
-        return r;
+        double[]result={a,b};
+        return result;
 
     }
+
+
+
 }
