@@ -6,30 +6,24 @@ public class Exercise_21 {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("enter number of cities:");
-        int number= input.nextInt();
-       double[][]points=new double[number][2];
-        System.out.println("enter coordinates of cities:");
 
-        for (int i = 0; i <points.length ; i++) {
-            for (int j = 0; j <points[i].length ; j++) {
-                points[i][j]=input.nextDouble();
-            }
-        }
-            double dis=0;
+       double[][]points=new double[input.nextInt()][2];
+       getPoints(points);
+            double minDistance=Integer.MAX_VALUE;
             double index1=0;
             double index2=0;
         for (int i = 0; i < points.length ; i++) {
         double distance=distance(points[i][0],points[i][1],points);
 
-       if (distance>dis){
+       if (distance< minDistance){
            index1=points[i][0];
            index2=points[i][1];
-           dis=distance;
+           minDistance=distance;
        }
 
         }
         System.out.println("the center city location is "+"( "+index1+" ,"+index2+" )");
-        System.out.printf("the total distance is %.2f ",dis);
+        System.out.printf("the total distance is %.2f ", minDistance);
     }
 
 public static double distance(double p1,double p2,double[][]points){
@@ -40,5 +34,14 @@ public static double distance(double p1,double p2,double[][]points){
  return distance;
 
     }
+public static void getPoints(double[][]points){
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter coordinates of cities:");
 
+    for (int row = 0; row <points.length ; row++) {
+        for (int col = 0; col <points[row].length ; col++) {
+            points[row][col]=input.nextDouble();
+        }
+    }
+}
 }
