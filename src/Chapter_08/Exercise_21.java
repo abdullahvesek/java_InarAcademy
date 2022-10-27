@@ -9,7 +9,7 @@ public class Exercise_21 {
 
        double[][]points=new double[input.nextInt()][2];
        getPoints(points);
-            double minDistance=Integer.MAX_VALUE;
+            double minDistance=Double.MAX_VALUE;
             double index1=0;
             double index2=0;
         for (int i = 0; i < points.length ; i++) {
