@@ -12,7 +12,7 @@ public class Account {
         dateCreated=new Date();
     }
 
-Account(int id,double balance){
+public  Account(int id,double balance){
         this.id=id;
         this.balance=balance;
         dateCreated=new Date();
@@ -31,10 +31,10 @@ double getAnnualInterstRate(){
 double getMonthlyInterest(){
         return getBalance()*(getMonthlyInterestRate()/100);
 }
-double getBalance(){
+ public double getBalance(){
         return  balance;
 }
-void withDraw(double amount){
+public  void withDraw(double amount){
         balance-=amount;
 }
 void setAnnualInterestRate(double annualInterestRate){
@@ -44,7 +44,7 @@ void setAnnualInterestRate(double annualInterestRate){
 int getId(){
         return id;
 }
-void deposit(double amount){
+public void deposit(double amount){
         balance+=amount;
 }
 
