@@ -1,9 +1,8 @@
-package Weeks.week10;
-
+package Weeks.week_10;
 import java.util.Scanner;
-
-public class MaxRow {
+public class MaxCol {
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
 
         int[][] arr = new int[10][10];
@@ -12,26 +11,26 @@ public class MaxRow {
                 arr[i][j] = input.nextInt();
             }
         }
-        System.out.println("the index is "+getTheRowWithTheMaxIndex(arr));
+        System.out.println("the index is "+getTheColWithTheMaxIndex(arr));
     }
 
-    public static int getTheRowWithTheMaxIndex(int[][] matrix) {
+    public static int getTheColWithTheMaxIndex(int[][] matrix) {
         int sum = Integer.MIN_VALUE;
         int tempSum;
         int index = -1;
 
 
-        for (int row = 0; row < matrix.length; row++) {
+        for (int col = 0; col < matrix.length; col++) {
             tempSum = 0;
-            for (int col = 0; col < matrix[row].length; col++) {
+            for (int row = 0; row < matrix[col].length; row++) {
                 tempSum += matrix[row][col];
             }
-            if (tempSum > sum){
-                index = row;
+            if (tempSum > sum) {
+                index = col;
                 sum = tempSum;
             }
         }
         return index;
-    }
 
+    }
 }

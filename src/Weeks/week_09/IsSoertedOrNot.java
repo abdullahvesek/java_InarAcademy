@@ -1,4 +1,4 @@
-package Weeks.week9;
+package Weeks.week_09;
 import java.util.Scanner;
 public class IsSoertedOrNot {
     public static void main(String[] args) {

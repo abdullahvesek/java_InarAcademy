@@ -1,4 +1,4 @@
-package Weeks.week13;
+package Weeks.week_13;
 
 public class Home {
     private double surface;

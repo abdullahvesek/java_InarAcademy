@@ -1,4 +1,4 @@
-package Weeks.week8;
+package Weeks.week_08;
 import java.util.Scanner;
 public class IsRotation {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Weeks.week11;
+package Weeks.week_11;
 
 public class FındLargestRowAndCol {
     public static void main(String[] args) {

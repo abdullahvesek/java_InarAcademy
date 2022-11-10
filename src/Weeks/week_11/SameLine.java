@@ -1,4 +1,4 @@
-package Weeks.week11;
+package Weeks.week_11;
 import java.util.Scanner;
 public class SameLine {
     public static void main(String[] args) {

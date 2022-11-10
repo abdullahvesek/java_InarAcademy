@@ -1,4 +1,4 @@
-package Weeks.week3;
+package Weeks.week_03;
 import java.util.Scanner;
 public class Exercise_03 {
     public static void main(String[] args) {
