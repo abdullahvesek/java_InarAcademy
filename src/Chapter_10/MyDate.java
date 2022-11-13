@@ -7,14 +7,14 @@ public class MyDate {
     private int month;
     private int day;
 
-    MyDate(){
+   public MyDate(){
         GregorianCalendar calendar=new GregorianCalendar();
         this.day=calendar.get(GregorianCalendar.DAY_OF_MONTH);
         this.month=calendar.get(GregorianCalendar.MONTH);
         this.year=calendar.get(GregorianCalendar.YEAR);
 
     }
-MyDate(long elapsed){
+public  MyDate(long elapsed){
         GregorianCalendar calendar=new GregorianCalendar();
         calendar.setTimeInMillis(elapsed);
     year = calendar.get(GregorianCalendar.YEAR);
