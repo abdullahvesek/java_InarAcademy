@@ -9,6 +9,7 @@ public class SavingsAccount extends Account {
     }
 
     public SavingsAccount(int id, double balance) {
+
         super(id, balance);
     }
 
@@ -16,7 +17,7 @@ public class SavingsAccount extends Account {
         if (getBalance() > amount) {
             setBalance(getBalance() - amount);
         } else
-            System.out.println("you cannot withdraw money because forbidden boy!!");
+            System.out.println("you cannot withdraw money because ıt is forbidden boy!!");
     }
 
 

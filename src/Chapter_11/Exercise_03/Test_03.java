@@ -9,6 +9,7 @@ public class Test_03 {
         s.withdraw(100);
 
         System.out.println(c.toString());
+        System.out.println("------------------------");
         System.out.println(s.toString());
     }
 

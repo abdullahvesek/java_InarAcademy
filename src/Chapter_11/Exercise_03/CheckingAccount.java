@@ -17,17 +17,26 @@ public class CheckingAccount extends Account {
         super(id, balance);
         this.limit = limit;
     }
-public void withDraw(double amount){
+
+    public double getLimit() {
+        return limit;
+    }
+
+    public void setLimit(double limit) {
+        this.limit = limit;
+    }
+
+    public void withDraw(double amount){
        if (getBalance()-amount>limit){
 setBalance(getBalance()-amount);
        }
 else
-           System.out.println("you cannot take money poor guy!!!");
+           System.out.println("you cannot take money poor guy your willings exceed limit !!!");
 
    }
 @Override
     public String toString(){
-       return super.toString()+"the limit is "+limit;
+       return super.toString()+" the limit is "+limit+" $";
 }
 
 }
