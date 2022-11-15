@@ -25,7 +25,8 @@ public class CheckingAccount extends Account {
     public void setLimit(double limit) {
         this.limit = limit;
     }
-@Override
+
+    @Override
     public void withDraw(double amount) {
         if (getBalance() - amount > limit) {
             setBalance(getBalance() - amount);

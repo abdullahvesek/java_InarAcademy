@@ -12,7 +12,8 @@ public class SavingsAccount extends Account {
 
         super(id, balance);
     }
-@Override
+
+    @Override
     public void withDraw(double amount) {
         if (getBalance() > amount) {
             setBalance(getBalance() - amount);
@@ -23,6 +24,6 @@ public class SavingsAccount extends Account {
 
     @Override
     public String toString() {
-      return   super.toString();
+        return super.toString();
     }
 }
