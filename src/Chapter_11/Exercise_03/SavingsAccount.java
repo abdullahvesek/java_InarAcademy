@@ -12,8 +12,8 @@ public class SavingsAccount extends Account {
 
         super(id, balance);
     }
-
-    public void withdraw(double amount) {
+@Override
+    public void withDraw(double amount) {
         if (getBalance() > amount) {
             setBalance(getBalance() - amount);
         } else

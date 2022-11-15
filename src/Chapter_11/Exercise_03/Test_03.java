@@ -6,7 +6,7 @@ public class Test_03 {
         SavingsAccount s=new SavingsAccount(65,10000);
 
         c.withDraw(50000);
-        s.withdraw(100);
+        s.withDraw(100);
 
         System.out.println(c.toString());
         System.out.println("------------------------");
