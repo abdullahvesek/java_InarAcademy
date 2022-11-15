@@ -5,7 +5,7 @@ public class Test_03 {
         CheckingAccount c=new CheckingAccount(25,25000,100);
         SavingsAccount s=new SavingsAccount(65,10000);
 
-        c.withDraw(5000);
+        c.withDraw(50000);
         s.withdraw(100);
 
         System.out.println(c.toString());
