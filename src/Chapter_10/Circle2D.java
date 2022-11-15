@@ -5,7 +5,7 @@ public class Circle2D {
     private double y;
     private double radius;
 
-    Circle2D(){
+   public Circle2D(){
         this.x=0;
         this.y=0;
         this.radius=1;
